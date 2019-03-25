@@ -1,0 +1,30 @@
+# Before use, add the following to ".bashrc".
+# if [ -f xx/.alias ]; then
+# . xx/.alias
+# fi
+#
+# Replace "xx/.alias" with your filepath
+
+
+# Custom aliases
+
+# Navigation
+alias cd.="cd .."
+alias cdd="cd ~/Documents/"
+alias cdg="cd ~/Gitlab/"
+
+alias ll.="ll .."
+alias lls="ls -alCF"
+
+# Bash
+alias bashre="source ~/.bashrc"
+
+# Git
+alias ggl="git pull"
+alias ggs="git push"
+
+# Other
+alias katta="cat ~/Documents/.dotfiles/.alias"
+
+# Programs
+alias kl="tty-clock -cs"
