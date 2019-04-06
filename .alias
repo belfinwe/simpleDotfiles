@@ -27,5 +27,11 @@ alias ggs="git push"
 alias katta="cat ~/git/simpleDotfiles/.alias"
 
 # Programs
-# Kanskje etterhvert automatisk installere tty-clock?
+## Clock
+## Install tty-clock if not already installed
+if ! [ -x "${command -v tty-clock}" ]; then
+    echo 'Error: tty-clock is not installed. Enter sudo password to install (apt)' >&2
+    sudo apt-get install tty-clock
+    exit 1
+fi
 alias kl="tty-clock -cs"
