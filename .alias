@@ -11,7 +11,7 @@
 # Navigation
 alias cd.="cd .."
 alias cdd="cd ~/Documents/"
-alias cdg="cd ~/Gitlab/"
+alias cdg="cd ~/git/"
 
 alias ll.="ll .."
 alias lls="ls -alCF"
@@ -24,7 +24,8 @@ alias ggl="git pull"
 alias ggs="git push"
 
 # Other
-alias katta="cat ~/Documents/.dotfiles/.alias"
+alias katta="cat ~/git/simpleDotfiles/.alias"
 
 # Programs
+# Kanskje etterhvert automatisk installere tty-clock?
 alias kl="tty-clock -cs"
