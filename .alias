@@ -30,7 +30,7 @@ alias katta="cat ~/git/simpleDotfiles/.alias"
 # Programs
 ## Clock
 ## Install tty-clock if not already installed
-if ! [ -x "${command -v tty-clock}" ]; then
+if ! [ -x "$(command -v tty-clock)" ]; then
     echo 'Error: tty-clock is not installed. Enter sudo password to install (apt)' >&2
     sudo apt-get install tty-clock
     exit 1
