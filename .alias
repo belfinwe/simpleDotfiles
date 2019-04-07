@@ -1,3 +1,4 @@
+#!/bin/bash
 # Before use, add the following to ".bashrc".
 # if [ -f xx/.alias ]; then
 # . xx/.alias
