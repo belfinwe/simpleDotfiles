@@ -1,0 +1,5 @@
+2019-04-08:  
+Added .programs, which installes misc programs. Which programs are listed as comments in the file.
+
+2019-04-06:  
+Some commands might need certain programs installed. I've tested with how to automaticly install them if they are not installed, firs of was the kl-command, which need tty-clock.
