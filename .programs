@@ -1,0 +1,19 @@
+#!bin/bash
+
+##############################
+## Installs programs I like ##
+##############################
+
+# vim
+if ! [ -x "$(command -v vim)" ];then
+    echo "Preparing to install vim.\nSubmit password now!" >&2
+    sudo apt-get install vim
+    exit 1
+fi
+
+# tty-clock
+if ! [ -x "$(command -v tty-clock)" ]; then
+    echo 'Error: tty-clock is not installed. Enter sudo password to install (apt)' >&2
+    sudo apt-get install tty-clock
+    exit 1
+fi
