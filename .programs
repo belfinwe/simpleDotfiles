@@ -17,3 +17,10 @@ if ! [ -x "$(command -v tty-clock)" ]; then
     sudo apt-get install tty-clock
     exit 1
 fi
+
+# dropbox
+if ! [ -x "$(command -v dropbox)" ]; then
+    echo 'Installing dropbox' >&2
+    sudo apt-get install dropbox
+    exit 1
+fi
