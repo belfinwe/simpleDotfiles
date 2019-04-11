@@ -1,5 +1,6 @@
 2019-04-11:
 Added more to .programs, and updated README.
+Changed some aliases in .alias, and added some comments.
 
 2019-04-08:
 Added .programs, which installes misc programs. Which programs are listed as comments in the file.

@@ -14,19 +14,21 @@ alias cd.="cd .."
 alias cdd="cd ~/Documents/"
 alias cdg="cd ~/git/"
 
+alias ll="ls -alF"
+alias l="ls -AlCF"
 alias ll.="ll .."
-alias lls="ls -alCF"
+#alias lls="ls -alCF" # Replaced by l
 
 # Bash
-alias bashre="source ~/.bashrc"
+alias bashre="source ~/.bashrc" # Restarts bash
 
 # Git
 alias ggl="git pull"
 alias ggs="git push"
 
 # Other
-alias katta="cat ~/git/simpleDotfiles/.alias"
-alias kl="tty-clock -cs"
+alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
+alias kl="tty-clock -cs" # Termianl clock
 
 # Run dotfiles
 alias runDot=". .programs"
