@@ -49,9 +49,16 @@ if ! [ -x "$(command -v vlc)" ]; then
 fi
 
 # neofetch
-if ! [ -x "$(coomand -v neofetch)" ]; then
+if ! [ -x "$(command -v neofetch)" ]; then
     echo "Installing neofetch" >&2
     sudo apt-get install neofetch
+    exit 1
+fi
+
+# htop
+if ! [ -x "$(command -v htop)" ]; then
+    echo "Installing htop" >&2
+    sudo apt-get install htop
     exit 1
 fi
 

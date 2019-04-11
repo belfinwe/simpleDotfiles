@@ -26,3 +26,4 @@ Contains installation (using `apt`) of a few programs, such as:
 - dropbox
 - vlc
 - neofetch
+- htop
