@@ -1,8 +1,15 @@
 #!bin/bash
 
-##############################
-## Installs programs I like ##
-##############################
+#########################################
+## Installs programs I usually install ##
+#########################################
+
+# git
+if ! [ -x "$(command -v git)" ];then
+    echo "Installing git!" >&2
+    sudo apt-get install git
+    exit 1
+fi
 
 # vim
 if ! [ -x "$(command -v vim)" ];then
@@ -10,6 +17,15 @@ if ! [ -x "$(command -v vim)" ];then
     sudo apt-get install vim
     exit 1
 fi
+
+## vim dotfiles, extarnal source
+## credit to timss (https://github.com/timss/vimconf)
+## vim need to run to finsih the installation
+## Is done at the end of the file
+cd ~/git
+git clone https://github.com/timss/vimconf.git
+ln -s ~/git/vimconf/.vimrc ~/.vimrc
+
 
 # tty-clock
 if ! [ -x "$(command -v tty-clock)" ]; then
@@ -24,3 +40,21 @@ if ! [ -x "$(command -v dropbox)" ]; then
     sudo apt-get install dropbox
     exit 1
 fi
+
+# vlc
+if ! [ -x "$(command -v vlc)" ]; then
+    echo 'Installing vlc' >&2
+    sudo apt-get install vlc
+    exit 1
+fi
+
+# neofetch
+if ! [ -x "$(coomand -v neofetch)" ]; then
+    echo "Installing neofetch" >&2
+    sudo apt-get install neofetch
+    exit 1
+fi
+
+
+# Launching vim, to install extarnal dotfiles
+cd ~/ && vim vimTest.txt
