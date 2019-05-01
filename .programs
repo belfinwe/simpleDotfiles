@@ -18,7 +18,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v vim)" ];then
     echo "Preparing to install vim.\nSubmit password now!" >&2
-    sudo apt-get install vim
+    sudo apt-get install vim -y
     #exit 1
 fi
 
@@ -27,7 +27,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v tty-clock)" ]; then
     echo 'Error: tty-clock is not installed. Enter sudo password to install (apt)' >&2
-    sudo apt-get install tty-clock
+    sudo apt-get install tty-clock -y
     #exit 1
 fi
 
@@ -36,7 +36,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v dropbox)" ]; then
     echo 'Installing dropbox' >&2
-    sudo apt-get install dropbox
+    sudo apt-get install dropbox -y
     #exit 1
 fi
 
@@ -45,7 +45,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v vlc)" ]; then
     echo 'Installing vlc' >&2
-    sudo apt-get install vlc
+    sudo apt-get install vlc -y
     #exit 1
 fi
 
@@ -54,7 +54,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v neofetch)" ]; then
     echo "Installing neofetch" >&2
-    sudo apt-get install neofetch
+    sudo apt-get install neofetch -y
     #exit 1
 fi
 # ##################################################
@@ -62,7 +62,7 @@ fi
 # ##################################################
 if ! [ -x "$(command -v htop)" ]; then
     echo "Installing htop" >&2
-    sudo apt-get install htop
+    sudo apt-get install htop -y
     #exit 1
 fi
 
