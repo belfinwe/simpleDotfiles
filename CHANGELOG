@@ -1,9 +1,15 @@
+2019-05-01:
+Fixed typo in `.alias`, added comments in `.program` and commented out the exits.
+Added more to the part in README about what to do before downloading and running.
+
 2019-04-11:
 Added more to .programs, and updated README.
 Changed some aliases in .alias, and added some comments.
 
+
 2019-04-08:
 Added .programs, which installes misc programs. Which programs are listed as comments in the file.
+
 
 2019-04-06:
 Some commands might need certain programs installed. I've tested with how to automaticly install them if they are not installed, firs of was the kl-command, which need tty-clock.
