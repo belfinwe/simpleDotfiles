@@ -9,7 +9,7 @@
 # ##################################################
 if ! [ -x "$(command -v git)" ];then
     echo "Installing git!" >&2
-    sudo apt-get install git
+    sudo apt-get install git -y
     #exit 1
 fi
 
