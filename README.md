@@ -8,7 +8,8 @@ in some of the files for them to work.
 
 ## Download and run content 
 The commands below installs git, creates the folder `git` (where I store my git
-repos), and lastly clones the project into the folder `git`
+repos), and lastly clones the project into the folder `git`.  
+__Downloading:__  
 ```
 sudo apt-get install git
 ```
@@ -18,11 +19,19 @@ mkdir ~/git/
 ```
 cd ~/git && git clone git@github.com:belfinwe/simpleDotfiles.git
 ```  
+__Running:__  
+```
+cat aliasToBashrc >> ~/.bashrc
+```
+```
+source ~/.bashrc && runDot
+```
   
 ## Files
 
 __.alias__  
-Contains a few aliases. How to add them to `.bashrc` in the `.alias`file.  
+Contains a few aliases. How to add them to `.bashrc` can be viewed under
+"Running" above.
   
 __.programs__  
 Contains installation (using `apt`) of a few programs, such as:
