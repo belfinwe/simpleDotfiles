@@ -1,0 +1,4 @@
+# Custom part, added by "simpleDotfiles"
+if [ -f ~/git/simpleDotfiles/.alias ]; then
+    . ~/git/simpleDotfiles/.alias
+fi
