@@ -57,6 +57,7 @@ if ! [ -x "$(command -v neofetch)" ]; then
     sudo apt-get install neofetch -y
     #exit 1
 fi
+
 # ##################################################
 # htop
 # ##################################################
@@ -65,6 +66,18 @@ if ! [ -x "$(command -v htop)" ]; then
     sudo apt-get install htop -y
     #exit 1
 fi
+
+# ##################################################
+# pip3 and youtube-dl
+# ##################################################
+sudo apt-get install python3-pip -y
+sudo -H pip3 install --upgrade youtube-dl
+
+# ##################################################
+# Add .alias to .bashrc
+# ##################################################
+cat aliasToBashrc >> ~/.bashrc
+source ~/.bashrc
 
 # ##################################################
 # From other sources

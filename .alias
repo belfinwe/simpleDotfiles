@@ -31,4 +31,4 @@ alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
 alias kl="tty-clock -cs" # Termianl clock
 
 # Run dotfiles
-alias runDot=". ~/git/simpleDotfiles/.programs"
+#alias runDot=". ~/git/simpleDotfiles/.programs" # May not need anymore?
