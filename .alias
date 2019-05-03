@@ -25,6 +25,7 @@ alias bashre="source ~/.bashrc" # Restarts bash
 # Git
 alias ggl="git pull"
 alias ggs="git push"
+alias gits="git status"
 
 # Other
 alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
