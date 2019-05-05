@@ -18,11 +18,11 @@ sudo apt-get install git
 mkdir ~/git/
 ```
 ```
-cd ~/git && git clone git@github.com:belfinwe/simpleDotfiles.git
+cd ~/git && git clone https://github.com/belfinwe/simpleDotfiles.git
 ```  
 __Running:__  
 ```
-.programs
+. simpleDotfiles/.programs
 ```
   
 ## Files
@@ -39,3 +39,7 @@ Contains installation (using `apt`) of a few programs, such as:
 - vlc
 - neofetch
 - htop
+
+## testing branch
+
+Branch for testing. Also for getting to know more about branching in git.
