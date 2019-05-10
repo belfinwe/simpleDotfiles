@@ -41,10 +41,11 @@ Contains installation (using `apt`) of a few programs, such as:
 - htop
 
 __testPrograms__  
-Will be the new `.programs` in the future, just need to be tested more first. Uses the `installLog` file to log
-the changes and what programs are successfully installed.  
+Will be the new `.programs` in the future, just need to be tested more first. 
+Uses the `installLog` file to log the changes and what programs 
+are successfully installed.  
 
-__klokke__  
+__customClock__  
 Contains setup for clock in Linux. Shows date, weekday and time.  
 Format for the last day of 2019: `|| 31. December 2019 || Tuesday || 23:59:59`.
 

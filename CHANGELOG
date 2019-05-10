@@ -1,3 +1,7 @@
+2019-05-10:
+Have merged some test files to master, `testPrograms` and `installLog`. More about these in the README.
+Alter the name of `klokke` to `customClock`.
+
 2019-05-01:
 Fixed typo in `.alias`, added comments in `.program` and commented out the exits.
 Added more to the part in README about what to do before downloading and running.
