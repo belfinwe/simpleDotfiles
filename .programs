@@ -7,76 +7,76 @@
 # ##################################################
 # git
 # ##################################################
-if ! [ -x "$(command -v git)" ];then
-    echo "Installing git!" >&2
-    sudo apt-get install git -y
+sudo apt-get install git -y
+if [ -x "$(command -v git)" ];then
+    echo "git installed!\n" >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # vim
 # ##################################################
-if ! [ -x "$(command -v vim)" ];then
-    echo "Preparing to install vim.\nSubmit password now!" >&2
-    sudo apt-get install vim -y
+sudo apt-get install vim -y
+if [ -x "$(command -v vim)" ];then
+    echo "vim install!\n" >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # tty-clock
 # ##################################################
-if ! [ -x "$(command -v tty-clock)" ]; then
-    echo 'Error: tty-clock is not installed. Enter sudo password to install (apt)' >&2
-    sudo apt-get install tty-clock -y
+sudo apt-get install tty-clock -y
+if [ -x "$(command -v tty-clock)" ]; then
+    echo 'tty-clock installed!\n' >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # dropbox
 # ##################################################
-if ! [ -x "$(command -v dropbox)" ]; then
-    echo 'Installing dropbox' >&2
-    sudo apt-get install dropbox -y
+sudo apt-get install dropbox -y
+if [ -x "$(command -v dropbox)" ]; then
+    echo 'dropbox installed!\n' >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # vlc
 # ##################################################
-if ! [ -x "$(command -v vlc)" ]; then
-    echo 'Installing vlc' >&2
-    sudo apt-get install vlc -y
+sudo apt-get install vlc -y
+if [ -x "$(command -v vlc)" ]; then
+    echo 'vlc installed' >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # neofetch
 # ##################################################
-if ! [ -x "$(command -v neofetch)" ]; then
-    echo "Installing neofetch" >&2
-    sudo apt-get install neofetch -y
+sudo apt-get install neofetch -y
+if [ -x "$(command -v neofetch)" ]; then
+    echo "neofetch installed!\n" >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # htop
 # ##################################################
-if ! [ -x "$(command -v htop)" ]; then
-    echo "Installing htop" >&2
-    sudo apt-get install htop -y
+sudo apt-get install htop -y
+if [ -x "$(command -v htop)" ]; then
+    echo "htop installed!\n" >&2 >> installLog
     #exit 1
 fi
 
 # ##################################################
 # pip3 and youtube-dl
 # ##################################################
-sudo apt-get install python3-pip -y
-sudo -H pip3 install --upgrade youtube-dl
+sudo apt-get install python3-pip -y && echo "python3-pip installed!\n" >> installLog
+sudo -H pip3 install --upgrade youtube-dl && echo "youtube-dl installed!\n" >> installLog
 
 # ##################################################
 # Add .alias to .bashrc
 # ##################################################
-cat aliasToBashrc >> ~/.bashrc
+cat aliasToBashrc >> ~/.bashrc && echo ".alias added to .bashrc" >> installLog
 source ~/.bashrc
 
 # ##################################################
