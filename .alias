@@ -27,10 +27,6 @@ alias ggl="git pull"
 alias ggs="git push"
 alias gits="git status"
 
-# System
-alias deboot="sudo shutdown -h now"
-alias reboot="sudo shutdown -r now"
-
 # Other
 alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
 alias kl="tty-clock -cs" # Termianl clock
