@@ -6,18 +6,26 @@
 #
 # Replace "~/git/simpleDotfiles/.alias" with your filepath if needed.
 
-
-# Custom aliases
+# ############## #
+# Custom aliases #
+# ############## #
 
 # Navigation
 alias cd.="cd .."
 alias cdd="cd ~/Documents/"
 alias cdg="cd ~/git/"
 
+# Views
+## ls views
 alias ll="ls -alF" # List all files and directories
 alias l="ls -AlCF" # As with ll, but show in column
 alias ll.="ll .." # ll, but for parent directory
 #alias lls="ls -alCF" # Replaced by l
+
+## tree views
+alias tt="tree"
+alias tta="tree -a" # All files
+alias ttd="tree -d" # Directories
 
 # Bash
 alias bashre="source ~/.bashrc" # Restarts bash
@@ -32,4 +40,4 @@ alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
 alias kl="tty-clock -cs" # Termianl clock
 
 # Run dotfiles
-#alias runDot=". ~/git/simpleDotfiles/.programs" # May not need anymore?
+#alias runDot=". ~/git/simpleDotfiles/.programs" # May not be need anymore?

@@ -10,7 +10,6 @@
 sudo apt-get install git -y
 if [ -x "$(command -v git)" ];then
     echo "git installed!\n" >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -19,7 +18,6 @@ fi
 sudo apt-get install vim -y
 if [ -x "$(command -v vim)" ];then
     echo "vim install!\n" >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -28,7 +26,6 @@ fi
 sudo apt-get install tty-clock -y
 if [ -x "$(command -v tty-clock)" ]; then
     echo 'tty-clock installed!\n' >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -37,7 +34,6 @@ fi
 sudo apt-get install dropbox -y
 if [ -x "$(command -v dropbox)" ]; then
     echo 'dropbox installed!\n' >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -46,7 +42,6 @@ fi
 sudo apt-get install vlc -y
 if [ -x "$(command -v vlc)" ]; then
     echo 'vlc installed' >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -55,7 +50,6 @@ fi
 sudo apt-get install neofetch -y
 if [ -x "$(command -v neofetch)" ]; then
     echo "neofetch installed!\n" >&2 >> installLog
-    #exit 1
 fi
 
 # ##################################################
@@ -64,8 +58,16 @@ fi
 sudo apt-get install htop -y
 if [ -x "$(command -v htop)" ]; then
     echo "htop installed!\n" >&2 >> installLog
-    #exit 1
 fi
+
+# ##################################################
+# tree
+# ##################################################
+sudo apt-get install tree -y
+if [ -x "$(command -v tree)" ]; then
+    echo "tree installed!\n" >&2 >> installLog
+fi
+
 
 # ##################################################
 # pip3 and youtube-dl
