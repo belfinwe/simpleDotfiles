@@ -23,9 +23,9 @@ alias ll.="ll .." # ll, but for parent directory
 #alias lls="ls -alCF" # Replaced by l
 
 ## tree views
-alias tt="tree"
+# alias tt="tree"
 alias tta="tree -a" # All files
-alias ttd="tree -d" # Directories
+alias tt="tree -d" # Directories
 
 # Bash
 alias bashre="source ~/.bashrc" # Restarts bash
