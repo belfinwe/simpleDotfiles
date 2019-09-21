@@ -17,9 +17,9 @@ alias cdg="cd ~/git/"
 
 # Views
 ## ls views
-alias ll="ls -lF" # List files and directories
-alias la="ls -AlF" # List all files and directories
-alias l="ls -alF" # List all files and directories
+alias ll="ls -lhF" # List files and directories
+alias la="ls -AlhF" # List all files and directories
+alias l="ls -alhF" # List all files and directories
 alias lc="ls -CF" # As with ll, but in columns
 alias lq="ls -aCF" # As with la, but show in columns
 alias ll.="ll .." # ll, but for parent directory
