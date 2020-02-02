@@ -1,4 +1,5 @@
 # simpleDotfiles
+
 I'm still new to dotfiles, but thought I'd upload the results of what I've
 learned so far here. Will be updated as I learn more.  
 For the default file paths to work, you should download/clone these files to
@@ -7,6 +8,7 @@ If you want to place the files somewhere else, you need to alter the file path
 in some of the files for them to work.  
 
 ## Download and run content
+
 The commands below installs git, creates the folder `git` (where I store my git
 repos), and lastly clones the project into the folder `git`.  
 
@@ -42,7 +44,7 @@ Contains installation (using `apt`) of a few programs, such as:
 
 __aliasToBashrc__  
 Contains the part needed for `.bashrc` to use the `.alias` file. Part of the
-automation of the install process. Used by `.programs` under the header _Add .alias to .bashrc_.
+automation of the install process. Used by `.programs` (in the file, see  _Add .alias to .bashrc_).
 
 __testPrograms__  
 Will be the new `.programs` in the future, just need to be tested more first.

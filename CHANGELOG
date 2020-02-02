@@ -1,3 +1,7 @@
+2020-02-02:
+Made some minor alterations in the README, cosmetic and for be more clear.
+Added datetime to the lines that are added to the install log in `.programs`.
+
 2019-05-10:
 Have merged some test files to master, `testPrograms` and `installLog`. More about these in the README.
 Alter the name of `klokke` to `customClock`.
