@@ -13,18 +13,18 @@ The commands below installs git, creates the folder `git` (where I store my git
 repos), and lastly clones the project into the folder `git`.  
 
 __Downloading:__  
-```
+```bash
 sudo apt-get install git
 ```
-```
+```bash
 mkdir ~/git/
 ```
-```
+```bash
 cd ~/git && git clone https://github.com/belfinwe/simpleDotfiles.git
 ```  
 __Running:__  
-```
-. simpleDotfiles/.programs
+```bash
+. simpleDotfiles/programs.sh
 ```
 
 ## Files
