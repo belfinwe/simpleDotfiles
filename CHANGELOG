@@ -1,3 +1,7 @@
+2020-04-10:
+Added removal of `/etc/sudoers.d/0pwfeedback`, which shows each letter when writing a password
+as asterisks.
+
 2020-02-02:
 Made some minor alterations in the README, cosmetic and for be more clear.
 Added datetime to the lines that are added to the install log in `.programs`.
