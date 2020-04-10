@@ -89,7 +89,7 @@ source ~/.bashrc
 # Don't show asterisks when writing passwords
 # ##################################################
 if [ -f /etc/sudoers.d/0pwfeedback ]; then
-    sudo rm /etc/sudoers.d/0pwfeedback && echo "/etc/sudoers.d/0pwfeedback removed\n" >&2 >> installLog
+    sudo rm /etc/sudoers.d/0pwfeedback && echo $today"/etc/sudoers.d/0pwfeedback removed\n" >&2 >> installLog
 fi
 
 # ##################################################
