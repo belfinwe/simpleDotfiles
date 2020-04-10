@@ -78,11 +78,19 @@ fi
 sudo apt-get install python3-pip -y && echo $today" - python3-pip installed!\n" >> installLog
 sudo -H pip3 install --upgrade youtube-dl && echo $today" - youtube-dl installed!\n" >> installLog
 
+
 # ##################################################
 # Add .alias to .bashrc
 # ##################################################
 cat aliasToBashrc >> ~/.bashrc && echo $today" - .alias added to .bashrc" >> installLog
 source ~/.bashrc
+
+# ##################################################
+# Don't show asterisks when writing passwords
+# ##################################################
+if [ -f /etc/sudoers.d/0pwfeedback ]; then
+    sudo rm /etc/sudoers.d/0pwfeedback && echo "/etc/sudoers.d/0pwfeedback removed\n" >&2 >> installLog
+fi
 
 # ##################################################
 # From other sources

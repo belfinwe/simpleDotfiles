@@ -40,7 +40,7 @@ alias gits="git status"
 
 # Other
 alias katta="cat ~/git/simpleDotfiles/.alias" # View .alias file content
-alias kl="tty-clock -cs" # Termianl clock
+alias kl="tty-clock -cs" # Terminal clock
 
 # Run dotfiles
 #alias runDot=". ~/git/simpleDotfiles/.programs" # May not be need anymore?
