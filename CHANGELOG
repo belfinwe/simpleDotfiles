@@ -1,3 +1,7 @@
+2020-04-19:
+`programs.sh` will now write to `installLog` even if it does not install a program 
+in its list.
+
 2020-04-10:
 Added removal of `/etc/sudoers.d/0pwfeedback`, which shows each letter when writing a password
 as asterisks.
