@@ -13,9 +13,9 @@ today=$(date)
 sudo apt-get install git -y
 if [ -x "$(command -v git)" ]
 then
-    echo $today" - git installed!\n" >&2 >> installLog
+    echo $today" - git installed!" >&2 >> installLog
 else
-    echo $today" - git NOT installed!\n" >&2 >> installLog
+    echo $today" - git NOT installed!" >&2 >> installLog
 fi
 
 # ##################################################
@@ -24,9 +24,9 @@ fi
 sudo apt-get install vim -y
 if [ -x "$(command -v vim)" ]
 then
-    echo $today" - vim install!\n" >&2 >> installLog
+    echo $today" - vim install!" >&2 >> installLog
 else
-    echo $today" - vim NOT install!\n" >&2 >> installLog
+    echo $today" - vim NOT install!" >&2 >> installLog
 
 fi
 
@@ -36,9 +36,9 @@ fi
 sudo apt-get install tty-clock -y
 if [ -x "$(command -v tty-clock)" ]
 then
-    echo $today' - tty-clock installed!\n' >&2 >> installLog
+    echo $today' - tty-clock installed!' >&2 >> installLog
 else
-    echo $today' - tty-clock NOT installed!\n' >&2 >> installLog
+    echo $today' - tty-clock NOT installed!' >&2 >> installLog
 fi
 
 # ##################################################
@@ -47,9 +47,9 @@ fi
 sudo apt-get install dropbox -y
 if [ -x "$(command -v dropbox)" ]
 then
-    echo $today' - dropbox installed!\n' >&2 >> installLog
+    echo $today' - dropbox installed!' >&2 >> installLog
 else
-    echo $today' - dropbox NOT installed!\n' >&2 >> installLog
+    echo $today' - dropbox NOT installed!' >&2 >> installLog
 fi
 
 # ##################################################
@@ -69,9 +69,9 @@ fi
 sudo apt-get install neofetch -y
 if [ -x "$(command -v neofetch)" ]
 then
-    echo $today" - neofetch installed!\n" >&2 >> installLog
+    echo $today" - neofetch installed!" >&2 >> installLog
 else
-    echo $today" - neofetch NOT installed!\n" >&2 >> installLog
+    echo $today" - neofetch NOT installed!" >&2 >> installLog
 fi
 
 # ##################################################
@@ -80,9 +80,9 @@ fi
 sudo apt-get install htop -y
 if [ -x "$(command -v htop)" ]
 then
-    echo $today" - htop installed!\n" >&2 >> installLog
+    echo $today" - htop installed!" >&2 >> installLog
 else
-    echo $today" - htop NOT installed!\n" >&2 >> installLog
+    echo $today" - htop NOT installed!" >&2 >> installLog
 fi
 
 # ##################################################
@@ -91,17 +91,17 @@ fi
 sudo apt-get install tree -y
 if [ -x "$(command -v tree)" ]
 then
-    echo $today" - tree installed!\n" >&2 >> installLog
+    echo $today" - tree installed!" >&2 >> installLog
 else
-    echo $today" - tree NOT installed!\n" >&2 >> installLog
+    echo $today" - tree NOT installed!" >&2 >> installLog
 fi
 
 
 # ##################################################
 # pip3 and youtube-dl
 # ##################################################
-sudo apt-get install python3-pip -y && echo $today" - python3-pip installed!\n" >> installLog
-sudo -H pip3 install --upgrade youtube-dl && echo $today" - youtube-dl installed!\n" >> installLog
+sudo apt-get install python3-pip -y && echo $today" - python3-pip installed!" >> installLog
+sudo -H pip3 install --upgrade youtube-dl && echo $today" - youtube-dl installed!" >> installLog
 
 
 # ##################################################
@@ -114,7 +114,7 @@ source ~/.bashrc
 # Don't show asterisks when writing passwords
 # ##################################################
 if [ -f /etc/sudoers.d/0pwfeedback ]; then
-    sudo rm /etc/sudoers.d/0pwfeedback && echo $today"/etc/sudoers.d/0pwfeedback removed\n" >&2 >> installLog
+    sudo rm /etc/sudoers.d/0pwfeedback && echo $today" - /etc/sudoers.d/0pwfeedback removed" >&2 >> installLog
 fi
 
 # ##################################################
@@ -129,6 +129,7 @@ fi
 cd ~/git
 git clone https://github.com/timss/vimconf.git
 ln -s ~/git/vimconf/.vimrc ~/.vimrc
+echo $today" - Installed vim configurations" >&2 >> installLog
 
 # Launching vim, to install extarnal dotfiles
 cd ~/ && vim vimTest.txt
