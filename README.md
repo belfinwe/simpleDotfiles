@@ -28,7 +28,7 @@ cd simpleDotfiles && . programs.sh
 ```
 
 After the scipt is done, it wil change directory to $HOME, and open the
-`installLog`.`
+`installLog`.
 
 ## Files
 
