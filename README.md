@@ -24,8 +24,11 @@ cd ~/git && git clone https://github.com/belfinwe/simpleDotfiles.git
 ```  
 __Running:__  
 ```bash
-. simpleDotfiles/programs.sh
+cd simpleDotfiles && . programs.sh
 ```
+
+After the scipt is done, it wil change directory to $HOME, and open the
+`installLog`.`
 
 ## Files
 
