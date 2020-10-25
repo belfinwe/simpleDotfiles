@@ -24,9 +24,9 @@ fi
 sudo apt-get install vim -y
 if [ -x "$(command -v vim)" ]
 then
-    echo $today" - vim install!" >&2 >> $HOME/installLog
+    echo $today" - vim installed!" >&2 >> $HOME/installLog
 else
-    echo $today" - vim NOT install!" >&2 >> $HOME/installLog
+    echo $today" - vim NOT installed!" >&2 >> $HOME/installLog
 
 fi
 
