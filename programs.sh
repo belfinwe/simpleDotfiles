@@ -129,7 +129,7 @@ fi
 cd ~/git
 git clone https://github.com/timss/vimconf.git
 ln -s ~/git/vimconf/.vimrc ~/.vimrc
-echo $today" - Installed vim configurations" >&2 >> $HOME/installLog
+echo $today" - vim configurations installed." >&2 >> $HOME/installLog
 
 # Launching vim, to install extarnal dotfiles
 cd ~/ && vim installLog
