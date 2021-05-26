@@ -24,6 +24,7 @@ alias lc="ls -CF" # As with ll, but in columns
 alias lq="ls -aCF" # As with la, but show in columns
 alias ll.="ll .." # ll, but for parent directory
 #alias lls="ls -alCF" # Replaced by l
+#alias ls=ls -F  # Normal ls, but with classification
 
 ## tree views
 # alias tt="tree"
